@@ -5,6 +5,9 @@
   display: grid;
   justify-content: center;
   overflow: scroll;
+  text-align: justify;
+  --white: rgba(255, 255, 255, 1);
+  --black: rgb(75, 75, 75, 1);
   background: rgb(183,238,255);
   background: linear-gradient(333deg, rgba(183,238,255,1) 0%, rgb(239, 225, 255) 33%, rgba(255,220,244,1) 66%, rgba(247,237,223,1) 100%);
 }
@@ -35,6 +38,20 @@ main {
   width: 50%;
 }
 
+.projectCard {
+  background-color: rgb(255, 255, 255, 0.6);
+  padding: 0.5em 1em;
+  margin: 3em 1em;
+}
+
+h2 {
+  color: rgb(107, 27, 90)
+}
+
+h3, b {
+  color: rgb(203, 47, 169)
+}
+
 footer {
   padding: 1em;
   align-self: end;
@@ -43,6 +60,7 @@ footer {
 }
 
 .imgContainer {
+  margin: 2em;
   border-radius: 100%;
   background-color: rgba(255,255,255,0.5);
   min-width: 50px;
@@ -57,25 +75,12 @@ img {
 }
 
 .profile {
-  width: 250px;
+  width: 200px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 3fr 7fr;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -91,12 +96,4 @@ img {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
