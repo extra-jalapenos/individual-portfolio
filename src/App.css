@@ -1,9 +1,11 @@
 #root {
   padding: 0;
   margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
   background: rgb(183,238,255);
   background: linear-gradient(333deg, rgba(183,238,255,1) 0%, rgb(239, 225, 255) 33%, rgba(255,220,244,1) 66%, rgba(247,237,223,1) 100%);
-  height: 100vh;
 }
 
 .container {
@@ -23,13 +25,29 @@ header {
   place-content: center;
 }
 
-.main {
+main {
   grid-area: "main";
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.6);
 }
 
 footer {
   grid-area: "footer";
+}
+
+.imgContainer {
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.5);
+  min-width: 50px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+}
+
+.profile {
+  width: 250px;
 }
 
 .logo {
