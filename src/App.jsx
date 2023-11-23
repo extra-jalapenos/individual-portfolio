@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Projects from './components/Projects'
 import Imprint from './components/Imprint'
+import ContactForm from "./components/Contact"
 import About from './components/About'
 import Footer from './components/Footer'
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/projects" element={<Projects />} />
         <Route path="/imprint" element={<Imprint />} />
+        <Route path="/contact" element={<ContactForm />} />
         <Route path="/about-me" element={<About />}/>
       </Routes>
       <Footer />

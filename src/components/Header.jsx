@@ -8,6 +8,7 @@ export default function Header () {
         <Button name="Home" url="/"/>
         <Button name="Projects" url="/projects"/>
         <Button name="About Me" url="/about-me"/>
+        <Button name="Contact" url="/contact"/>
         <Button name="Imprint" url="/imprint"/>
       </nav>
     </header>
