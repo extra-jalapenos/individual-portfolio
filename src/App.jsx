@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Routes, Route } from "react-router-dom"
 import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
@@ -9,7 +10,10 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <Home />
+      <Routes>
+        <Route to="/" element={<Home />}/>
+        {/* <Route to="/about" element={}/> */}
+      </Routes>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
