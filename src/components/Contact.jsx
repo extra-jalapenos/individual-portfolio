@@ -95,9 +95,9 @@ export default function ContactForm () {
     <main>
       <form onSubmit={() => console.log(form)}>
         {formFields.map((field, index) => <FormField key={index} name={field.name} type={field.type} description={field.description} placeholder={field.placeholder} handleInput={handleInput}/>)}
-        <div>
-          <button onClick={handleSubmit}>Submit</button>
-          <button onClick={handleReset}>Clear</button>
+        <div className="buttons">
+          <button id="cancel" onClick={handleReset}>Clear</button>
+          <button id="submit" onClick={handleSubmit}>Submit</button>
         </div>
       </form>
     </main>
