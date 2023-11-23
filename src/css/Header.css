@@ -5,14 +5,13 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(min-content, 0.2fr));
 }
 
-nav button {
+button {
   border-radius: 2em;
   padding: 1em 1em;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.5);
   border: none;
-  opacity: 0.5;
 }
 
-nav button:hover {
-  opacity: 1;
+button:hover {
+  background-color: rgba(255,255,255,1);
 }
