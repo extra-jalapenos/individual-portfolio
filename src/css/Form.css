@@ -7,10 +7,14 @@ form label {
   font-weight: bold;
 }
 
-form input {
+form input, form textarea {
   border-radius: 0.5em;
   margin: 0.5em 0;
   border: none;
   padding: 0.5em;
-  background-color: rgb(255, 246, 251);
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+form button {
+  margin: 1em;
 }

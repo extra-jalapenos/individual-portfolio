@@ -4,6 +4,7 @@
   height: 100vh;
   display: grid;
   justify-content: center;
+  overflow: scroll;
   background: rgb(183,238,255);
   background: linear-gradient(333deg, rgba(183,238,255,1) 0%, rgb(239, 225, 255) 33%, rgba(255,220,244,1) 66%, rgba(247,237,223,1) 100%);
 }
@@ -16,6 +17,7 @@
   "main"
   "footer";
   grid-template-rows: minmax(min-content, 80px) 1fr minmax(min-content, 50px);
+  width: 100vw;
   height: 100%;
 }
 
@@ -29,8 +31,8 @@ header {
 main {
   grid-area: "main";
   justify-self: center;
-  padding: 2em 0;
-  width: 80%;
+  padding: 2em;
+  width: 50%;
 }
 
 footer {
