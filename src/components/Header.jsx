@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function HeaderItem ({name, url}) {
   const navigate = useNavigate()
@@ -12,7 +12,6 @@ function HeaderItem ({name, url}) {
 export default function Header () {
   return (
     <header>
-      <h1>Rebecca Noy</h1>
       <nav>
         <HeaderItem name="Home" url="/"/>
         <HeaderItem name="Projects" url="/projects"/>

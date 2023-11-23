@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
 import "normalize.css"
 import './App.css'
+import "./css/header.css"
 import Header from './components/Header'
 import Home from './components/Home'
 import Imprint from './components/Imprint'
