@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
 import Imprint from './components/Imprint'
+import About from './components/About'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/imprint" element={<Imprint />} />
-        {/* <Route to="/about" element={}/> */}
+        <Route path="/about-me" element={<About />}/>
       </Routes>
       <Footer />
     </div>
