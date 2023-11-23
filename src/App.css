@@ -39,9 +39,19 @@ main {
 }
 
 .projectCard {
+  border-radius: 1em;
   background-color: rgb(255, 255, 255, 0.6);
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   margin: 3em 1em;
+}
+
+.projectCard buttoncontainer {
+  margin: 1em 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  justify-content: end;
+  align-items: center;
 }
 
 h2 {

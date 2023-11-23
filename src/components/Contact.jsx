@@ -1,9 +1,7 @@
 import { useState } from "react"
 import "../css/Form.css"
-import Button from "./Button"
 
 function FormField ({name, description, placeholder, type, handleInput}) {
-  console.log(name, type)
   switch (type) {
     case "text":
       return (
@@ -47,12 +45,10 @@ export default function ContactForm () {
 
   const handleInput = (event) => {
     const {name, value} = event.target
-    console.log(event.target.name)
     setForm({
       ...form,
       [name]: value
     })
-    console.log(form)
   }
 
   const handleSubmit = (event) => {

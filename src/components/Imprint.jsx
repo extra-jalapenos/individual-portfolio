@@ -1,3 +1,4 @@
+import { phoneNum } from "./formatting"
 export default function Imprint () {
   return (
     <main className="imprint">
@@ -14,7 +15,7 @@ export default function Imprint () {
       Brentanostraße 5<br/>
       93051 Regensburg</p>
       <h4>Kontakt</h4>
-      <p>Telefon: +4915142337656<br/>
+      <p>Telefon: {phoneNum("+4915142337656")}<br/>
       E-Mail: rebecca.noy@gmx.de</p>
     </main>
   )
