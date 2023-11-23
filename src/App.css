@@ -13,7 +13,7 @@
   grid-template-areas: "header"
   "main"
   "footer";
-  grid-template-rows: 80px 1fr 80px;
+  grid-template-rows: minmax(min-content, 80px) 1fr 80px;
   height: 100%;
 }
 
