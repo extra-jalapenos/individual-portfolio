@@ -15,7 +15,7 @@
   grid-template-areas: "header"
   "main"
   "footer";
-  grid-template-rows: minmax(min-content, 80px) 1fr 80px;
+  grid-template-rows: minmax(min-content, 80px) 1fr minmax(min-content, 50px);
   height: 100%;
 }
 
@@ -32,6 +32,8 @@ main {
 }
 
 footer {
+  padding: 1em;
+  align-self: end;
   grid-area: "footer";
 }
 
