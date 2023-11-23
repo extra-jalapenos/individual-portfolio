@@ -23,6 +23,7 @@ header {
   grid-area: "header";
   display: grid;
   place-content: center;
+  background: rgba(247,237,223,0.25);
 }
 
 main {
@@ -36,6 +37,7 @@ footer {
   padding: 1em;
   align-self: end;
   grid-area: "footer";
+  background: rgb(183,238,255, 0.25);
 }
 
 .imgContainer {
