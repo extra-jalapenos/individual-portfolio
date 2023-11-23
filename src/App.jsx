@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
+import "normalize.css"
 import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
@@ -11,7 +12,7 @@ function App() {
     <div className="container">
       <Header />
       <Routes>
-        <Route to="/" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         {/* <Route to="/about" element={}/> */}
       </Routes>
       <p className="read-the-docs">
