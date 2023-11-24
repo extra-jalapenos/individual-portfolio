@@ -41,14 +41,9 @@ export default function Projects () {
   }
 
 
-
   const projects = [
     TaylorSwiftAPI,
-    {
-      title: "Test",
-      description: "Naja",
-      img: "projectImg"
-    },
+    TaylorSwiftAPI,
     {
       title: "Test",
       description: "Naja",
