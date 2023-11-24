@@ -11,7 +11,7 @@ export default function About () {
           Hi, nice to meet you!
         </h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus alias distinctio sunt esse laboriosam? Ipsum eum deserunt alias at perspiciatis nulla expedita, nemo, voluptates iusto eligendi commodi nisi fuga. Porro.
+          My name is Rebecca, and I'm a web developer working with ReactJS and of course Html and CSS.
         </p>
       </div>
     </main>
