@@ -1,4 +1,3 @@
-import projectImg from "../assets/LJstuff.png"
 import { GitHubFontLogo, GithubLogo } from "../assets/github-mark-white"
 
 function GitHubLink ({url}) {
