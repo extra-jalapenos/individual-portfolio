@@ -18,6 +18,7 @@ I wanted to make full use of what I learnt and apply this knowledge / the feedba
 Online Hosted Portfolio
 ## Portfolio GitHub Repo
 https://github.com/AllyDouillette/instructions-individual-portfolio
+Netlify: https://6560a3522098601e07a1d3f9--unique-lamington-3b16a7.netlify.app/imprint
 
 ✔︎  Stage, commit and push your changes; then raise a PR -- as per the usual process
  If any information changes, update it, and push your changes (especially important for the links)
