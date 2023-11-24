@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import "normalize.css"
 import './App.css'
-import "./css/header.css"
+import "../src/css/Header.css"
 import Header from './components/Header'
 import Home from './components/Home'
 import Projects from './components/Projects'
