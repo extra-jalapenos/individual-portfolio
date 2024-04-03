@@ -11,8 +11,10 @@ export default function About () {
           Hi, nice to meet you!
         </h1>
         <p>
-          My name is Rebecca, and I'm a web developer working with ReactJS and of course Html and CSS.
+          My name is Rebecca. My stack includes the <b>React</b> framework for Frontend Development, and <b>Express</b> in combination with <b>Prisma ORM</b> to manage <b>PostgreSQL</b> databases.
         </p>
+        <p>Apart from that, I'm a Scrum.org-certified <b>Scrum Master I & II</b> as well as <b>Product Owner I & II</b> due to multiple years of experience working closely with developers as well as application users.</p>
+        <Button name={"Contact me"} url={"/contact"} />
       </div>
     </main>
   )

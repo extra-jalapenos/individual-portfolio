@@ -11,10 +11,10 @@ export default function Header () {
       DE: "Startseite",
       EN: "Home"
     },
-    about: {
-      DE: "Über mich",
-      EN: "About me"
-    },
+    // about: {
+    //   DE: "Über mich",
+    //   EN: "About me"
+    // },
     projects: {
       DE: "Arbeiten",
       EN: "Projects"
@@ -34,7 +34,7 @@ export default function Header () {
       <nav>
         <Button name={navObj.home[language]} url="/"/>
         <Button name={navObj.projects[language]} url="/projects"/>
-        <Button name={navObj.about[language]} url="/about-me"/>
+        {/* <Button name={navObj.about[language]} url="/about-me"/> */}
         <Button name={navObj.contact[language]} url="/contact"/>
         <Button name={navObj.imprint[language]} url="/imprint"/>
         <button onClick={() => setLanguage(language === "DE" ? "EN" : "DE")}>{language === "DE" ? "🇩🇪 Deutsch" : "🇬🇧 English"}</button>
