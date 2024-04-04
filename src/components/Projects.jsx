@@ -5,20 +5,20 @@ function GitHubLink ({url}) {
     <buttoncontainer>
       <GithubLogo />
       <GitHubFontLogo />
-      {"/AllyDouillette/" + url}
+      <a href={`https://github.com/${url}`}>{url}</a>
     </buttoncontainer>
   )
 }
 
 function ProjectCard ({props}) {
-  const {title, description, img} = props
+  const {title, description, img, link} = props
 
   if (!img) return (
     <div className="projectCard">
       <h2>{title}</h2>
       {description}<br/>
-      <GitHubLink url={"taylor-swift-api"}/>
-    </div>  
+      <GitHubLink url={link}/>
+    </div>
   )
 
   return (
@@ -29,26 +29,33 @@ function ProjectCard ({props}) {
       </div>
       {description}
       <GitHubLink />
-    </div>  
+    </div>
   )
 }
 
 export default function Projects () {
 
-  const TaylorSwiftAPI = {
-    title: "Taylor Swift API",
-    description: `This API provides information on Taylor Swift's albums and songs. Available endpoints include: album details | song details including appearances | different editions of an album | song lyrics`,
+  // const TaylorSwiftAPI = {
+  //   title: "Taylor Swift API",
+  //   description: `This API provides information on Taylor Swift's albums and songs. Available endpoints include: album details | song details including appearances | different editions of an album | song lyrics`,
+  // }
+
+  const apprendioFrontend = {
+    title: "Flashcard / Study App – Frontend",
+    description: `Learn anywhere, anytime, as much (or as little) as your daily routine allows you to with apprendio.online.
+    Technologies used: React, JavaScript, CSS, Html`,
+    link: "AllyDouillette/apprendio-flashcard-app-frontend"
   }
 
+  const apprendioBackend = {
+    title: "Flashcard / Study App – Backend",
+    description: `Technologies used: Express, Prisma ORM, PostgreSQL`,
+    link: "AllyDouillette/apprendio-flashcard-app-backend"
+  }
 
   const projects = [
-    TaylorSwiftAPI,
-    TaylorSwiftAPI,
-    {
-      title: "Test",
-      description: "Naja",
-      img: "projectImg"
-    }
+    apprendioFrontend,
+    apprendioBackend
   ]
 
   return (
