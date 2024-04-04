@@ -9,8 +9,8 @@ function FormField ({name, description, placeholder, type, handleInput}) {
           <label>{description}</label>
           <input
             name={name}
-            placeholder={placeholder} 
-            type={type} 
+            placeholder={placeholder}
+            type={type}
             onChange={(event) => handleInput(event)}
           />
         </>
@@ -22,7 +22,7 @@ function FormField ({name, description, placeholder, type, handleInput}) {
           <label>{description}</label>
           <textarea
             name={name}
-            placeholder={placeholder} 
+            placeholder={placeholder}
             type={type}
             rows={8}
             onChange={(event) => handleInput(event)}
@@ -32,7 +32,7 @@ function FormField ({name, description, placeholder, type, handleInput}) {
 
   }
 
-  
+
 }
 
 export default function ContactForm () {
@@ -89,7 +89,7 @@ export default function ContactForm () {
 
   return (
     <main>
-      <form onSubmit={() => console.log(form)}>
+      <form onSubmit={() => console.log(form)} netlify>
         {formFields.map((field, index) => <FormField key={index} name={field.name} type={field.type} description={field.description} placeholder={field.placeholder} handleInput={handleInput}/>)}
         <div className="buttons">
           <button id="cancel" onClick={handleReset}>Clear</button>
